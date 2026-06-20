@@ -17,7 +17,7 @@ export default function MemberCard({ login, avatar_url, html_url }: MemberCardPr
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -5 }}
             whileTap={{ scale: 0.95 }}
-            className="flex flex-col items-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 transition-all"
+            className="flex flex-col items-center p-4 bg-muted/30 backdrop-blur-sm rounded-2xl border border-border transition-all hover:border-codev-primary/50"
         >
             <Image
                 src={avatar_url}
@@ -26,7 +26,7 @@ export default function MemberCard({ login, avatar_url, html_url }: MemberCardPr
                 height={80}
                 className="rounded-full border-2 border-codev-primary"
             />
-            <span className="mt-2 text-sm font-medium text-white">{login}</span>
+            <span className="mt-2 text-sm font-medium text-foreground">{login}</span>
         </motion.a>
     )
 }
